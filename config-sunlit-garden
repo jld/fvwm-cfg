@@ -1,0 +1,6 @@
+# -*- conf-space -*-
+
+AddToMenu StuffMenu
++ "&Big Text"     Exec xterm -fa mono:pixelsize=24 -geometry 80x25
+# FIXME: fix the geometry hax
++ "Big&ger Text"  Exec xterm -fa mono:pixelsize=35 -geometry 80x26--6--1

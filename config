@@ -115,10 +115,6 @@ AddToMenu StuffMenu
 + "FVWM &Console" FvwmConsole
 + ""              Nop
 + &Firefox        Exec exec /usr/local/m-c/bin/firefox -new-instance
-# FIXME: factor these out
-+ "&Big Text"     Exec xterm -fa mono:pixelsize=24 -geometry 80x25
-# FIXME: fix the geometry hax
-+ "Big&ger Text"  Exec xterm -fa mono:pixelsize=35 -geometry 80x26--6--1
 
 DestroyMenu MetaMenu
 AddToMenu MetaMenu
@@ -127,3 +123,5 @@ AddToMenu MetaMenu
 + Restart        Restart
 + "Don't Exit"   Nop
 + Exit           Quit
+
+PipeRead 'cat ~/.fvwm/config-"$(hostname -s)"'
