@@ -1,0 +1,129 @@
+DesktopSize 1 1
+
+Style * PositionPlacement UnderMouse, IconBox None
+Style Emacs ManualPlacement
+# TODO: overrides for xterm, ...
+OpaqueMoveSize unlimited
+
+Style * !Handles, BorderWidth 4
+Style * TitleAtLeft, LeftTitleRotatedCW, StippledTitle, TitleFormat [%I] %n
+TitleStyle LeftJustified MinHeight 20
+CursorStyle ROOT X_cursor
+
+# Might also/instead want a non-side title bar for:
+Style util-term TitleFormat %n
+# But this there's not much help for:
+Style fvwm_menu TitleFormat %n
+Style xclock NoTitle
+
+
+ButtonStyle 2 AllUp Vector 14 \
+  0+3px0+3p@4  25+2px0+3p@1   55-1px40-1p@0 \
+  10+3px100-4p@0 0+3px100-4p@0 40-1px50-1p@1 \
+  0+3px0+3p@1 \
+  100-4px100-4p@4 75-3px100-4p@0 45+0px60+0p@1 \
+   90-4px0+3p@1  100-4px0+3p@1   60+0px50+0p@0 \
+  100-4px100-4p@0
+ButtonStyle 2 AllDown Vector 14 \
+  0+3px0+3p@4  25+2px0+3p@0   55-1px40-1p@1 \
+  10+3px100-4p@1 0+3px100-4p@1 40-1px50-1p@0 \
+  0+3px0+3p@0 \
+  100-4px100-4p@4 75-3px100-4p@1 45+0px60+0p@0 \
+   90-4px0+3p@0  100-4px0+3p@0   60+0px50+0p@1 \
+  100-4px100-4p@1
+
+DestroyFunc Move-and-Raise
+AddToFunc Move-and-Raise
++ M Move
++ I Raise
+
+DestroyFunc Move-or-Iconify
+AddToFunc Move-or-Iconify
++ M Move
++ C Iconify true
+
+DestroyFunc UnIconify
+AddToFunc UnIconify
++ I Iconify false
++ I WarpToWindow 50 50
+
+DestroyFunc IconifyOnTop
+AddToFunc IconifyOnTop
++ I Iconify true
++ I Raise
+
+DestroyFunc Move-or-UnIconify
+AddToFunc Move-or-UnIconify
++ M Move
++ C UnIconify
+
+DestroyFunc ResizeNow
+AddToFunc ResizeNow 
++ I Resize
+
+Mouse 1 R A Menu StuffMenu
+Mouse 1 A MS Menu StuffMenu
+Mouse 3 R A Menu MetaMenu
+Mouse 3 A MS Menu MetaMenu
+
+Key F12 A M Menu StuffMenu
+Key F12 A MS Menu MetaMenu
+
+Mouse 0 1 N IconifyOnTop
+Mouse 0 1 S Maximize
+Mouse 0 2 A Close
+
+Mouse 1 I N Move-or-UnIconify
+Mouse 1 I M Move-and-Raise
+Mouse 1 FST N Move-and-Raise
+Mouse 1 FSTW M Move-and-Raise
+Mouse 2 FST N Resize
+Mouse 2 FSTW M Resize
+
+Mouse 1 FST C ResizeNow
+Mouse 1 FSTW MC ResizeNow
+Mouse 2 FST C Maximize
+Mouse 2 FSTW MC Maximize
+
+Key 1 FSTW M IconifyOnTop
+Key 1 I M UnIconify
+Key 2 FSTWI M RaiseLower
+
+Key Escape A M RefreshWindow
+Key Escape R M Refresh
+Key grave A M Exec exec pasteurl
+# Note to self: M-S-` is free.
+
+Key F1 A M Exec exec   xterm -name util-term -title Volume \
+                             -geometry 53x8 -e amixinter
+Key F7 A M   Exec exec xmms2 seek 0
+Key F7 A MS  Exec exec xmms2 prev
+Key F8 A M   Exec exec xmms2 next
+Key F9 A M   Exec exec xmms2 seek -10
+Key F9 A MS  Exec exec xmms2 seek -60
+Key F10 A M  Exec exec xmms2 seek +10
+Key F10 A MS Exec exec xmms2 seek +60
+Key F11 A M  Exec exec xmms2 toggle
+Key F11 A MS Exec exec amixer set Master toggle >/dev/null
+
+DestroyMenu StuffMenu
+AddToMenu StuffMenu
++ Stuff           Title
++ &XTerm          Exec exec xterm
++ "&Long XTerm"   Exec exec xterm -name xterm-long
++ &Emacs          Exec exec emacs
++ "FVWM &Console" FvwmConsole
++ ""              Nop
++ &Firefox        Exec exec /usr/local/m-c/bin/firefox -new-instance
+# FIXME: factor these out
++ "&Big Text"     Exec xterm -fa mono:pixelsize=24 -geometry 80x25
+# FIXME: fix the geometry hax
++ "Big&ger Text"  Exec xterm -fa mono:pixelsize=35 -geometry 80x26--6--1
+
+DestroyMenu MetaMenu
+AddToMenu MetaMenu
++ Meta           Title
++ "Window List"  WindowList
++ Restart        Restart
++ "Don't Exit"   Nop
++ Exit           Quit
