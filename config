@@ -8,6 +8,9 @@ OpaqueMoveSize unlimited
 Style * !Handles, BorderWidth 4
 Style * TitleAtLeft, LeftTitleRotatedCW, StippledTitle, TitleFormat [%I] %n
 TitleStyle LeftJustified MinHeight 20
+Style * Font xft:sans:pixelsize=11:weight=bold
+MenuStyle * Font xft:serif:pixelsize=13
+MenuStyle * TitleFont xft:serif:pixelsize=13:weight=bold
 CursorStyle ROOT X_cursor
 
 # Might also/instead want a non-side title bar for:
