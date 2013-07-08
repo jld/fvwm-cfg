@@ -1,1 +1,5 @@
 Key F2 A M Exec exec xterm -name util-term -title Battery -geometry 32x7 -e batstate
+
+Style * Font xft:sans:pixelsize=13:weight=bold
+MenuStyle * TitleFont xft:serif:pixelsize=16:weight=bold
+MenuStyle * Font xft:serif:pixelsize=16
