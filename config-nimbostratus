@@ -1,0 +1,1 @@
+Key F2 A M Exec exec xterm -name util-term -title Battery -geometry 32x7 -e batstate
