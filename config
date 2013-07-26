@@ -6,7 +6,8 @@ Style Emacs ManualPlacement
 OpaqueMoveSize unlimited
 
 Style * !Handles, BorderWidth 4
-Style * TitleAtLeft, LeftTitleRotatedCW, StippledTitle, TitleFormat [%I] %n
+Style * TitleAtLeft, LeftTitleRotatedCW, StippledTitle
+Style * IconTitleFormat %i, TitleFormat [%I] %n
 TitleStyle LeftJustified MinHeight 20
 Style * Font xft:sans:pixelsize=11:weight=bold
 MenuStyle * Font xft:serif:pixelsize=13
