@@ -110,6 +110,8 @@ Key F10 A MS Exec exec xmms2 seek +60
 Key F11 A M  Exec exec xmms2 toggle
 Key F11 A MS Exec exec amixer set Master toggle >/dev/null
 
+Key Pause A N Exec /usr/local/sbin/snooze
+
 DestroyMenu StuffMenu
 AddToMenu StuffMenu
 + Stuff           Title
