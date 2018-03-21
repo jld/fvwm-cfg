@@ -1,5 +1,8 @@
 Key F2 A M Exec exec xterm -name util-term -title Battery -geometry 32x7 -e batstate
+
 Key Home A C Exec xbacklight +4
 Key End A C Exec xbacklight -4
 Key Home A CS Exec xbacklight +20
 Key End A CS Exec xbacklight -20
+
+Key Pause A N Exec physlock -s

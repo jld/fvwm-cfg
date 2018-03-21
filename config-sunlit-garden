@@ -7,3 +7,5 @@ AddToMenu StuffMenu
 Style * Font xft:sans-8:weight=bold
 MenuStyle * TitleFont xft:serif-10:weight=bold
 MenuStyle * Font xft:serif-10
+
+Key Pause A N Exec /usr/local/sbin/snooze
