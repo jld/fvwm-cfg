@@ -27,6 +27,8 @@ Style "ck2" !Borders, !Title
 Style "Europa Universalis IV" !Borders, !Title
 Style "Opus Magnum" !Borders, !Title
 Style "hoi4" !Borders, !Title
+Style "SHENZHEN I/O" !Borders, !Title
+Style "Kerbal Space Program" !Borders, !Title
 
 ButtonStyle 2 AllUp Vector 14 \
   0+3px0+3p@4  25+2px0+3p@1   55-1px40-1p@0 \
