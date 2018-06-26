@@ -1,0 +1,11 @@
+# -*- conf-space -*-
+
+AddToMenu StuffMenu
++ "&Big Text"     Exec xterm -fa mono:pixelsize=50 -geometry 80x25
++ "Big&ger Text"  Exec xterm -fa mono:pixelsize=73 -geometry 87x25--1--1
+
+Style * Font xft:sans-8:style=Bold
+MenuStyle * TitleFont xft:serif-10:style=Bold
+MenuStyle * Font xft:serif-10
+
+Key Pause A N Exec /usr/local/sbin/snooze
