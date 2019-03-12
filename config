@@ -134,7 +134,7 @@ AddToMenu StuffMenu
 + &Emacs          Exec exec emacs
 + "FVWM &Console" FvwmConsole
 + ""              Nop
-+ &Firefox        Exec exec /usr/local/m-c/bin/firefox -new-instance
++ &Firefox        Exec exec /usr/local/m-c/bin/firefox
 
 DestroyMenu MetaMenu
 AddToMenu MetaMenu
