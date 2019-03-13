@@ -30,6 +30,7 @@ Style "Opus Magnum" !Borders, !Title
 #Style "SHENZHEN I/O" !Borders, !Title
 Style "EXAPUNKS" !Borders, !Title
 Style "Kerbal Space Program" !Borders, !Title
+Style "BATTLETECH" !Borders, !Title
 # WTF
 ##Style "Steam" !Borders, !Title
 Style * MwmDecor
