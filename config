@@ -142,8 +142,21 @@ DestroyMenu MetaMenu
 AddToMenu MetaMenu
 + Meta           Title
 + "Window List"  WindowList
-+ Restart        Restart
++ "&Move"  	 Popup Move
++ "&Restart"     Restart
 + "Don't Exit"   Nop
 + Exit           Quit
+
+DestroyMeny Move
+AddToMenu Move
++ Move		 Title
++ "Move NW (&Y)" Move 0 0
++ "Move NE (&U)" Move -0 0
++ "Move SW (&B)" Move 0 -0
++ "Move SE (&N)" Move -0 -0
++ "Move W (&H)"  Move 0 w
++ "Move S (&J)"  Move w -0
++ "Move N (&K)"  Move w 0
++ "Move E (&L)"  Move -0 w
 
 PipeRead 'cat ~/.fvwm/config-"$(hostname -s)"'
