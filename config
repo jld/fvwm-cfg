@@ -32,6 +32,7 @@ Style "EXAPUNKS" !Borders, !Title
 Style "Kerbal Space Program" !Borders, !Title
 Style "BATTLETECH" !Borders, !Title
 Style "Imperator" !Borders, !Title
+Style "MOLEK-SYNTEZ" !Borders, !Title
 # WTF
 ##Style "Steam" !Borders, !Title
 Style * MwmDecor
