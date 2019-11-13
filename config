@@ -148,7 +148,7 @@ AddToMenu MetaMenu
 + "Don't Exit"   Nop
 + Exit           Quit
 
-DestroyMeny Move
+DestroyMenu Move
 AddToMenu Move
 + Move		 Title
 + "Move NW (&Y)" Move 0 0
