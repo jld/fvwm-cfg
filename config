@@ -37,6 +37,9 @@ Style "MOLEK-SYNTEZ" !Borders, !Title
 ##Style "Steam" !Borders, !Title
 Style * MwmDecor
 
+# Firefox PiP
+Style "Picture-in-Picture" !Borders, !Title, ResizeHintOverride
+
 ## Anti-workaround for the Motif thing
 Style "Evince" !MwmDecor
 
