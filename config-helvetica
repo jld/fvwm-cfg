@@ -3,6 +3,10 @@
 AddToMenu StuffMenu
 + "&Big Text"     Exec xterm -fa mono:pixelsize=50 -geometry 80x25
 + "Big&ger Text"  Exec xterm -fa mono:pixelsize=73 -geometry 87x25--1--1
++ ""		Nop
++ "&KeepassXC"	Exec keepassxc
++ "&Zoom"	Exec zoom
++ "&Spotify"	Exec spotify
 
 Style * Font xft:sans-8:style=Bold
 MenuStyle * TitleFont xft:serif-10:style=Bold
