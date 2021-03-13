@@ -1,4 +1,5 @@
 DesktopSize 1 1
+Module FvwmCommandS
 
 Style * PositionPlacement UnderMouse, IconBox None
 Style Emacs ManualPlacement
