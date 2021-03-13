@@ -5,6 +5,7 @@ AddToMenu StuffMenu
 + "Big&ger Text"  Exec xterm -fa mono:pixelsize=73 -geometry 87x25--1--1
 + "Tin&y Text"    Exec xterm -fa mono:pixelsize=10
 + ""	 	  Nop
++ "&KeepassXC"    Exec keepassxc
 + "&Spotify"	  Exec spotify
 + "S&team"	  Exec steam
 + "&PySolFC"	  Exec pysolfc
