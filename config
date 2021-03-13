@@ -128,14 +128,14 @@ Key grave A M Exec exec pasteurl
 
 Key F1 A M Exec exec   xterm -name util-term -title Volume \
                              -geometry 53x8 -e amixinter
-Key F7 A M   Exec exec xmms2 seek 0
-Key F7 A MS  Exec exec xmms2 prev
-Key F8 A M   Exec exec xmms2 next
-Key F9 A M   Exec exec xmms2 seek -10
-Key F9 A MS  Exec exec xmms2 seek -60
-Key F10 A M  Exec exec xmms2 seek +10
-Key F10 A MS Exec exec xmms2 seek +60
-Key F11 A M  Exec exec xmms2 toggle
+Key F7 A M   Exec exec mpactl seek 0 2
+Key F7 A MS  Exec exec mpactl pt_step -1
+Key F8 A M   Exec exec mpactl pt_step +1
+Key F9 A M   Exec exec mpactl seek -10
+Key F9 A MS  Exec exec mpactl seek -60
+Key F10 A M  Exec exec mpactl seek +10
+Key F10 A MS Exec exec mpactl seek +60
+Key F11 A M  Exec exec mpactl pause
 Key F11 A MS Exec exec amixer set Master toggle >/dev/null
 
 DestroyMenu StuffMenu

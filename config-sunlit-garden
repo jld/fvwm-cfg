@@ -3,7 +3,7 @@
 AddToMenu StuffMenu
 + "&Big Text"     Exec xterm -fa mono:pixelsize=50 -geometry 80x25
 + "Big&ger Text"  Exec xterm -fa mono:pixelsize=73 -geometry 87x25--1--1
-+ "Tin&y Text"    Exec xterm -fa mono:pixelsize=10
++ "Tin&y Text"    Exec xterm -fa mono:pixelsize=10 -name small-xterm
 + ""	 	  Nop
 + "&KeepassXC"    Exec keepassxc
 + "&Spotify"	  Exec spotify
@@ -13,6 +13,9 @@ AddToMenu StuffMenu
 Style * Font xft:sans-8:style=Bold
 MenuStyle * TitleFont xft:serif-10:style=Bold
 MenuStyle * Font xft:serif-10
+
+## For future reference
+#Style small-xterm TitleAtTop
 
 Style "explorer.exe" !Title,!Borders
 
