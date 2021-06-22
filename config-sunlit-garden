@@ -20,3 +20,4 @@ MenuStyle * Font xft:serif-10
 Style "explorer.exe" !Title,!Borders
 
 Key Pause A N Exec /usr/local/sbin/snooze
+Key Scroll_Lock C N Exec /home/jld/bin/kvm-fixup
