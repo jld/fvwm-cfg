@@ -13,4 +13,4 @@ MenuStyle * TitleFont xft:serif-10:style=Bold
 MenuStyle * Font xft:serif-10
 
 Key Pause A N Exec /usr/local/sbin/snooze
-Key Scroll_Lock C N Exec /home/jld/bin/kvm-fixup
+Key Scroll_Lock A C Exec /home/jld/bin/kvm-fixup
