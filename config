@@ -151,6 +151,7 @@ AddToMenu StuffMenu
 + "FVWM &Console" FvwmConsole
 + ""              Nop
 + &Firefox        Exec exec /usr/local/m-c/bin/firefox -new-instance
++ pa&vucontrol    Exec exec pavucontrol
 
 DestroyMenu MetaMenu
 AddToMenu MetaMenu
