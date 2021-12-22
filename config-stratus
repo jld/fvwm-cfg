@@ -1,0 +1,21 @@
+Key F2 A M Exec exec xterm -name util-term -title Battery -geometry 32x7 -e batstate
+
+Key XF86MonBrightnessUp A N Exec xbacklight +10
+Key XF86MonBrightnessDown A N Exec xbacklight -10
+Key XF86MonBrightnessUp A S Exec xbacklight +1
+Key XF86MonBrightnessDown A S Exec xbacklight -1
+
+Key Delete A CS Exec physlock -s
+Key Home A CS Exec tpad-reset
+
+Style * Font xft:sans-8:style=Bold
+MenuStyle * TitleFont xft:serif-10:style=Bold
+MenuStyle * Font xft:serif-10
+
+AddToMenu StuffMenu
++ "&Big Text"     Exec xterm -fa mono:pixelsize=36 -geometry 80x25
++ "Big&ger Text"  Exec xterm -fa mono:pixelsize=48 -geometry 87x25--1--1
++ ""	 	  Nop
++ "&KeepassXC"    Exec keepassxc
++ "&Spotify"	  Exec spotify
++ "&PySolFC"	  Exec pysolfc
