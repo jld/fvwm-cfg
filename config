@@ -39,8 +39,12 @@ Style "Crusader Kings III" !Borders, !Title
 ##Style "Steam" !Borders, !Title
 Style * MwmDecor
 
+# STO icon fuckery
+Style "steam_app_9900" IconSize 128 0
+
 # Firefox PiP
-Style "Picture-in-Picture" !Borders, !Title, ResizeHintOverride
+Style "Picture-in-Picture" !Borders, !Title
+# ResizeHintOverride doesn't fix all the rounding errors, sigh.
 
 ## Anti-workaround for the Motif thing
 Style "Evince" !MwmDecor
@@ -147,6 +151,7 @@ AddToMenu StuffMenu
 + "FVWM &Console" FvwmConsole
 + ""              Nop
 + &Firefox        Exec exec /usr/local/m-c/bin/firefox -new-instance
++ pa&vucontrol    Exec exec pavucontrol
 
 DestroyMenu MetaMenu
 AddToMenu MetaMenu
