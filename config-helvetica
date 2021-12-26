@@ -13,4 +13,5 @@ MenuStyle * TitleFont xft:serif-10:style=Bold
 MenuStyle * Font xft:serif-10
 
 Key Pause A N Exec /usr/local/sbin/snooze
+Key Pause A S Exec /usr/local/sbin/rsnooze sunlit-garden.xlerb.net
 Key Scroll_Lock A C Exec /home/jld/bin/kvm-fixup
