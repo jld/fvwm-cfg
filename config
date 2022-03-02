@@ -142,6 +142,9 @@ Key F10 A MS Exec exec mpactl seek +60
 Key F11 A M  Exec exec mpactl pause
 Key F11 A MS Exec exec amixer set Master toggle >/dev/null
 
+Key F1 A CS  Exec exec setxkbmap us
+Key F2 A CS  Exec exec setxkbmap ua
+
 DestroyMenu StuffMenu
 AddToMenu StuffMenu
 + Stuff           Title
