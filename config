@@ -121,9 +121,25 @@ Mouse 1 FSTW MC ResizeNow
 Mouse 2 FST C Maximize
 Mouse 2 FSTW MC Maximize
 
-Key 1 FSTW M IconifyOnTop
-Key 1 I M UnIconify
-Key 2 FSTWI M RaiseLower
+DestroyFunc MetaNumOn
+AddToFunc MetaNumOn
+ + I Key 1 FSTW M IconifyOnTop
+ + I Key 1 I M UnIconify
+ + I Key 2 FSTWI M RaiseLower
+
+DestroyFunc MetaNumOff
+AddToFunc MetaNumOff
+ + I Key 1 FSTW M -
+ + I Key 1 I M -
+ + I Key 2 FSTWI M -
+
+Key 1 FSTW CS IconifyOnTop
+Key 1 I CS UnIconify
+Key 2 FSTWI CS RaiseLower
+Key 3 A CS MetaNumOn
+Key 4 A CS MetaNumOff
+
+Function MetaNumOn
 
 Key Escape A M RefreshWindow
 Key Escape R M Refresh
