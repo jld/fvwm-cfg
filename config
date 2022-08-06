@@ -115,6 +115,8 @@ Mouse 1 FST N Move-and-Raise
 Mouse 1 FSTW M Move-and-Raise
 Mouse 2 FST N Resize
 Mouse 2 FSTW M Resize
+Mouse 3 IFST N Menu Move
+Mouse 3 IFSTW M Menu Move
 
 Mouse 1 FST C ResizeNow
 Mouse 1 FSTW MC ResizeNow
