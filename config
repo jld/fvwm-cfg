@@ -128,25 +128,30 @@ AddToFunc MetaNumOn
  + I Key 1 FSTW M IconifyOnTop
  + I Key 1 I M UnIconify
  + I Key 2 FSTWI M RaiseLower
+ + I Key Escape A M RefreshWindow
+ + I Key Escape R M Refresh
+ + I Key grave A M Exec exec pasteurl
 
 DestroyFunc MetaNumOff
 AddToFunc MetaNumOff
  + I Key 1 FSTW M -
  + I Key 1 I M -
  + I Key 2 FSTWI M -
+ + I Key Escape A M -
+ + I Key Escape R M -
+ + I Key grave A M -
 
 Key 1 FSTW CS IconifyOnTop
 Key 1 I CS UnIconify
 Key 2 FSTWI CS RaiseLower
 Key 3 A CS MetaNumOn
 Key 4 A CS MetaNumOff
+Key Escape A CS RefreshWindow
+Key Escape R CS Refresh
+Key grave A CS Exec exec pasteurl
 
 Function MetaNumOn
 
-Key Escape A M RefreshWindow
-Key Escape R M Refresh
-Key grave A M Exec exec pasteurl
-# Note to self: M-S-` is free.
 
 Key F1 A M Exec exec   xterm -name util-term -title Volume \
                              -geometry 53x8 -e amixinter
