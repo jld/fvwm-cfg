@@ -115,20 +115,43 @@ Mouse 1 FST N Move-and-Raise
 Mouse 1 FSTW M Move-and-Raise
 Mouse 2 FST N Resize
 Mouse 2 FSTW M Resize
+Mouse 3 IFST N Menu Move
+Mouse 3 IFSTW M Menu Move
 
 Mouse 1 FST C ResizeNow
 Mouse 1 FSTW MC ResizeNow
 Mouse 2 FST C Maximize
 Mouse 2 FSTW MC Maximize
 
-Key 1 FSTW M IconifyOnTop
-Key 1 I M UnIconify
-Key 2 FSTWI M RaiseLower
+DestroyFunc MetaNumOn
+AddToFunc MetaNumOn
+ + I Key 1 FSTW M IconifyOnTop
+ + I Key 1 I M UnIconify
+ + I Key 2 FSTWI M RaiseLower
+ + I Key Escape A M RefreshWindow
+ + I Key Escape R M Refresh
+ + I Key grave A M Exec exec pasteurl
 
-Key Escape A M RefreshWindow
-Key Escape R M Refresh
-Key grave A M Exec exec pasteurl
-# Note to self: M-S-` is free.
+DestroyFunc MetaNumOff
+AddToFunc MetaNumOff
+ + I Key 1 FSTW M -
+ + I Key 1 I M -
+ + I Key 2 FSTWI M -
+ + I Key Escape A M -
+ + I Key Escape R M -
+ + I Key grave A M -
+
+Key 1 FSTW CS IconifyOnTop
+Key 1 I CS UnIconify
+Key 2 FSTWI CS RaiseLower
+Key 3 A CS MetaNumOn
+Key 4 A CS MetaNumOff
+Key Escape A CS RefreshWindow
+Key Escape R CS Refresh
+Key grave A CS Exec exec pasteurl
+
+Function MetaNumOn
+
 
 Key F1 A M Exec exec   xterm -name util-term -title Volume \
                              -geometry 53x8 -e amixinter
