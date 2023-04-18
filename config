@@ -150,6 +150,8 @@ Key grave A M Exec exec pasteurl
 
 Key F1 A M Exec exec   xterm -name util-term -title Volume \
                              -geometry 53x8 -e amixinter
+Key F3 A M Exec exec   xterm -name util-term -title Camera \
+                             -geometry 24x6 -fa mono-12 -e camaiminter
 Key F7 A M   Exec exec mpactl seek 0 2
 Key F7 A MS  Exec exec mpactl pt_step -1
 Key F8 A M   Exec exec mpactl pt_step +1
