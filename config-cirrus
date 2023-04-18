@@ -10,3 +10,5 @@ Key Pause A N Exec physlock -s
 AddToMenu StuffMenu
 + "&Big Text"     Exec xterm -fa mono:pixelsize=24 -geometry 80x25
 + "Big&ger Text"  Exec xterm -fa mono:pixelsize=25 -geometry 89x25--1--1
++ ""	 	  Nop
++ "&KeepassXC"    Exec keepassxc
