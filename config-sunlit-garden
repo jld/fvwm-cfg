@@ -6,7 +6,7 @@ AddToMenu StuffMenu
 + "Tin&y Text"    Exec xterm -fa mono:pixelsize=10 -name small-xterm
 + ""	 	  Nop
 + "&KeepassXC"    Exec keepassxc
-+ "&Spotify"	  Exec spotify
++ "&Spotify"	  Exec spotify --force-device-scale-factor=1
 + "S&team"	  Exec steam
 + "&PySolFC"	  Exec pysolfc
 
