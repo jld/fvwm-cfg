@@ -7,7 +7,7 @@ AddToMenu StuffMenu
 + ""	 	  Nop
 + "&KeepassXC"    Exec keepassxc
 + "&Spotify"	  Exec spotify --force-device-scale-factor=1
-+ "S&team"	  Exec steam
++ "S&team"	  Exec steam -forcedesktopscaling 1
 + "&PySolFC"	  Exec pysolfc
 
 Style * Font xft:sans-8:style=Bold
