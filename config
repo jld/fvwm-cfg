@@ -173,6 +173,7 @@ Key F11 A MS Exec exec amixer set Master toggle >/dev/null
 
 Key F1 A CS  Exec exec setxkbmap us
 Key F2 A CS  Exec exec setxkbmap ua
+Key F3 A CS  Exec exec setxkbmap yi
 
 DestroyMenu StuffMenu
 AddToMenu StuffMenu
