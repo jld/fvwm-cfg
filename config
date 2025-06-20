@@ -36,6 +36,7 @@ Style "Imperator" !Borders, !Title
 Style "MOLEK-SYNTEZ" !Borders, !Title
 Style "Crusader Kings III" !Borders, !Title
 Style "victoria3" !Borders, !Title
+Style "Terra Nil" !Borders, !Title
 # WTF
 ##Style "Steam" !Borders, !Title
 Style * MwmDecor
