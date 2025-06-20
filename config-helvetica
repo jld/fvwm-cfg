@@ -8,9 +8,9 @@ AddToMenu StuffMenu
 + "&Zoom"	Exec zoom
 + "&Spotify"	Exec spotify --force-device-scale-factor=1
 
-Style * Font xft:sans-8:style=Bold
-MenuStyle * TitleFont xft:serif-10:style=Bold
-MenuStyle * Font xft:serif-10
+Style * Font xft:sans-9:style=Bold
+MenuStyle * TitleFont xft:serif-11:style=Bold
+MenuStyle * Font xft:serif-11
 
 Key Pause A N Exec /usr/local/sbin/snooze
 Key Pause A S Exec /usr/local/sbin/rsnooze sunlit-garden.xlerb.net
