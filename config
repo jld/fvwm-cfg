@@ -3,6 +3,7 @@ Module FvwmCommandS
 
 Style * PositionPlacement UnderMouse, IconBox None
 Style Emacs ManualPlacement
+Style easyeffects PositionPlacement 98-100w 94-100w
 # TODO: overrides for xterm, ...
 OpaqueMoveSize unlimited
 
